@@ -1,0 +1,4 @@
+실전연습_01_1: https://colab.research.google.com/drive/17DnV5G5AzE79bPoyq_7u2eWfyEK1pCYc?usp=sharing
+실전연습_01_2: https://colab.research.google.com/drive/1xUiE5Adkq2g_ua7SCoia1nT30zH_Jjfm?usp=sharing
+실전연습_반복문: https://colab.research.google.com/drive/1shwN_EVqTROK9ZJFSuauJqkWKjn_fUIt?usp=sharing
+실전연습_선택문: https://colab.research.google.com/drive/1V4m0_LQowvXq-q-mAKNmNXOVpgiSFmbL?usp=sharing
