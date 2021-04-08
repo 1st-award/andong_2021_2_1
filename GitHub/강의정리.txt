@@ -26,8 +26,14 @@ git diff -u: 2개의 커밋을 서로 비교해 볼 수 있다.
 git add "올릴 파일": staging에 파일을 올린다.
 git rm --chaced "내릴 파일": staging에 파일을 삭제한다.
 git branch "브랜치 이름": master브랜치를 생성한다
-
-
+git merge: 두 브랜치를 병합할 때 쓰는 명령어
+git fetch: 서버에는 존재하지만, 로컬에는 아직 업는 데이터를 받아와서 저장한다. 워킹 디렉토리의 파일 내용은 변경 x. 사용자가 merge 하도록 '준비'만 한다.
+git pull: 깃허브와 로컬과 동기화를 한다.
+git remote set-url "주소": 저장소 주소를 바꾼다
+git rebase master: master 브랜치에 베이스(base) 브랜치를 새롭게(re) 만들어준다.
+- 두 브랜치를 병합할 때 머지 커밋을 안만들고 싶을 때
+- b브랜치를 a브랜치 위에다가 쌓고 싶을 때
+git rebase interactive
 
 *'-'와 '--'의 차이점 -> '-'는 함축어 '--'는 원 단어를 입력할때 쓰인다.
 git -m "메세지 입력"
@@ -53,7 +59,9 @@ awesome '기술이름' github (awsome machine learning github)
 git checkout 커밋
 커밋은 언제 만드는가? -> 논리적 변경이 있을 때
 
-github, BitBucket, gitlab <-깃을 상용화한 서비스
+github, BitBucket, gitab <-깃을 상용화한 서비스
+깃헙, 비트버킷: Pull Request
+깃랩: Merge Request
 
 팁)학기가 시작될때마다 또는 과목마다 폴더를 만들어서 git init을 만들어 깃허브에 업로드하자.
 
@@ -71,4 +79,55 @@ gui먼저 하지말고 cli먼저 친해지자
 회사에 들가면 일감이라는게 주어진다 ex)일감 #123<-이슈코드로 쓰인다.
 커밋메세지이ㅣㅣㅣ(#123)
 
-네트워크 직업을 가질려면spring이라는 언어를 쓰는데 인텔리제이로도 가능하다.<-회사에서 이거씀 ㅇㅇ
+네트워크 직업을 가질려면spring이라는 언어를 쓰는데 인텔리제이로도 가능하다.
+
+개발중인 branch를 최신 소스코드로 유지하기
+충돌!!!!
+<<<<<<<<  HEAD
+……   							←  현재 체크아웃한 브랜치의 소스코드
+||||||||| merged common ancestors
+…….  							← 두 브랜치의 공통 조상의 소스코드
+============
+……   							←  병합하려는 브랜치의 소스코드
+>>>>>> 병합하려는 브랜치이름(master)
+
+브랜치
+
+asteroids
+동료: coins
+나: esay-mode
+
+-세개의 차이가 뭘까?
+git flow
+gitlab flow
+github flow
+
+상용 서버
+master, main
+개발 서버
+develop, devel
+
+ci/cd
+junkins circle ci
+
+*git pull과 git pull origin master의 차이
+원래 git pull은 저장소 이름이랑 브랜치 이름이 붙어있어야된다.
+하지만 안붙어 있을결우 origin master가 자동으로 붙기 때문에(안보이지만) pull이 되긴한다.
+
+*두 브랜치를 합칠 때
+local: git merge 명령어 사용
+깃헙: Pull Requst
+
+git pull = git merge + git fetch
+git fetch origin master
+git merge origin/master
+= git pull origin master
+
+origin이라는 이름은 remote 저장소의 이름이다.
+
+두 브랜치를 합칠 때 쓸 수 있는 명령어는 2가지
+- 일반적으론  git merge를 쓴다.
+- 근데 git rebase를 써도 브랜치를 합칠 수 있다.
+
+git merge 명령어를 치면 (대게) merge 커밋이 생긴다.
+git rebase 명령어를 치면 merge 커밋이 안생긴다.
