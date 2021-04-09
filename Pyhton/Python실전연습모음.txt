@@ -3,3 +3,4 @@
 실전연습_반복문: https://colab.research.google.com/drive/1shwN_EVqTROK9ZJFSuauJqkWKjn_fUIt?usp=sharing
 실전연습_선택문: https://colab.research.google.com/drive/1V4m0_LQowvXq-q-mAKNmNXOVpgiSFmbL?usp=sharing
 실전연습_함수: https://colab.research.google.com/drive/1m8LbL9t-ytFdYksX33kk0qdbIVdoAbRP?usp=sharingvim
+자료구조: https://colab.research.google.com/drive/1657xu0RLgGyPcdbSmSvq2lQdyuGl3fIQ?usp=sharing
