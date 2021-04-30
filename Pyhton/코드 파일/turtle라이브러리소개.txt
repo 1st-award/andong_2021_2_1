@@ -1,0 +1,11 @@
+turtle 라이브러리
+-파이썬에서 도형을 그리고 텍스트를 출력하는 기능을 가진 모듈.
+
+turtle함수
+
+-turtle.pensize(), turtle.pencolor(), turtle.fillcolor()
+
+-turtle.penup(), turtle.pendown(), turtle.goto(),
+-turtle.forward(), turtle.left(), turtle.right(), turtle.wirte()
+-turtle.begin_fill(), turtle.end_fill()
+-turtle.circle(len, steps=n) len: 변의 길이, n: 변의 수
