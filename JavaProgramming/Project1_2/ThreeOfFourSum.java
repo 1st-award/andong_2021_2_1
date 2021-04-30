@@ -9,6 +9,6 @@ public class ThreeOfFourSum{
 				sum += i;
 			}
 		}
-		System.out.println("3ë˜ëŠ” 4ì˜ ë°°ìˆ˜ì˜ í•©: " + sum);
+		System.out.println("3¶Ç´Â 4ÀÇ ¹è¼öÀÇ ÇÕ: " + sum);
 	}
 }

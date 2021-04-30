@@ -4,9 +4,9 @@ public class MiletoKilo {
         Scanner stdin = new Scanner(System.in);
         double mile;
         double kilometer;
-        System.out.print("mileì„ ì…ë ¥í•´ì£¼ì„¸ìš”: ");
+        System.out.print("mileÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä: ");
         mile = stdin.nextDouble();
         kilometer = mile*1.609;
-        System.out.println(mile + "ë§ˆì¼ì€ " + kilometer + "í‚¬ë¡œë¯¸í„° ì…ë‹ˆë‹¤.");
+        System.out.println(mile + "¸¶ÀÏÀº " + kilometer + "Å³·Î¹ÌÅÍ ÀÔ´Ï´Ù.");
     }
 }

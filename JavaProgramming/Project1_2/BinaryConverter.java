@@ -2,12 +2,13 @@ import java.util.Scanner;
 
 public class BinaryConverter {
     public static void main(String[] args) {
-        Scanner stdin = new Scanner(System.in);
-        int num;
-        int a=0;
-        System.out.print("ì •ìˆ˜: ");
+    	Scanner stdin = new Scanner(System.in);
+        int num, a=0;
+        
+        System.out.print("Á¤¼ö: ");
         num= stdin.nextInt();
         System.out.print(num+": ");
+        
         if(num/ 512>= 1) {
             System.out.print(1);
             num%= 512;
@@ -23,7 +24,7 @@ public class BinaryConverter {
                 System.out.print(0);
             }
         }
-
+        
         if(num/ 128>= 1) {
             System.out.print(1);
             num%= 128;
@@ -34,7 +35,7 @@ public class BinaryConverter {
                 System.out.print(0);
             }
         }
-
+        
         if(num/ 64>= 1) {
             System.out.print(1);
             num%= 64;
@@ -102,5 +103,6 @@ public class BinaryConverter {
         else{
             System.out.print(0);
         }
+        
     }
 }
