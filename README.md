@@ -7,7 +7,7 @@
 - [Project6](./JavaProgramming/Project6)
 - [수업시간 필기](./JavaProgramming/자바_수업시간_필기.md)
 ## 파이썬 #15
-- [코드 파일](./Pyhton/코드파일/)
-- [Python 필기모음](./Pyhton/Python필기모음.md)
+- [코드 파일](Python/코드파일/)
+- [Python 필기모음](Python/Python필기모음.md)
 ## 깃허브 #16
 - [강의정리](./GitHub/강의정리.md)
